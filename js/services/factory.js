@@ -21,7 +21,7 @@
         function func() {
         }
 
-
+//hola
         function getDefaultMovies() {
             $http.get(baseUrl + "discover/movie?with_genres=18&primary_release_year=2017&api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES")
 
