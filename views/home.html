@@ -44,10 +44,7 @@
 		<div class="col-xs-3">
 			Barras animadas que mueven
 		</div>
-		<div class="col-xs-3" ng-repeat="movie in movies track by $index">
-			<img src="" />
 
-		</div>
 
 	</div>
 	<div class="row">
@@ -60,7 +57,8 @@
 		</div>
 		<section class="col-xs-9">
 			<div class="col-xs-4" ng-repeat="movie in movies track by $index">
-				<img id="poster" ng-src="{{img + movie.poster_path}}" data-toggle="modal" data-target="#themodal">
+				<img id="poster" ng-src="{{img + movie.poster_path}}"  data-toggle="modal" data-target="#themodal">
+				<!--MIRAR superCRM-->
 			</div>
 		</section>
 
@@ -68,6 +66,7 @@
 
 
 </div>
+
 <div class="modal fade" id="themodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
