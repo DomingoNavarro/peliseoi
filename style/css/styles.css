@@ -78,3 +78,22 @@ button{
     width: 1224px;
 }
 /*hover en posters*/
+.posters{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#fff;
+}
+
+.posters img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.posters img:hover {
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
