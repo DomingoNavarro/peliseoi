@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('myApp')
+        .module('movies')
         .factory('moviesFactory', moviesFactory);
 
     moviesFactory.$inject = ['$http'];
