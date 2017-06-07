@@ -72,6 +72,7 @@ button{
 .imgModal{
     width: 440px;
     height: 660px;
+    padding-left:28px;
 
 }
 .modal-dialog{
