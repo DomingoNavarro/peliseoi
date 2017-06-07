@@ -13,7 +13,7 @@
             .when("/", {
 
                 controller: 'homeController',
-                templateUrl: '/views/home.html'
+                templateUrl: 'views/home.html'
             });
 
 
