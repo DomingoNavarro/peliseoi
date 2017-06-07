@@ -55,9 +55,9 @@
 			<button class="btn btn-default col-xs-6" ng-click="getGenre(genre.id)" ng-repeat="genre in genres track by $index">{{genre.name}}</button>
 
 		</div>
-		<section class="col-xs-9">
+		<section class="col-xs-9 posters">
 			<div class="col-xs-4" ng-repeat="movie in movies track by $index">
-				<img id="poster"class="posters" ng-click="selectedMovie(movie)" ng-src="{{img + movie.poster_path}}"  data-toggle="modal" data-target="#themodal">
+				<img id="poster" ng-click="selectedMovie(movie)" ng-src="{{img + movie.poster_path}}"  data-toggle="modal" data-target="#themodal">
 				<!--MIRAR superCRM-->
 			</div>
 		</section>
