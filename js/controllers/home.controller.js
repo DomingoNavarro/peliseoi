@@ -27,7 +27,7 @@
 		var baseUrl = "https://api.themoviedb.org/3/";
 
 		function call() {
-			$http.get(baseUrl + "discover/movie?&primary_release_year=2017&api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES")
+			$http.get(baseUrl + "discover/movie?&primary_release_year=2017&include_adult=true&api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES")
 
 				.then(function (response) {
 					console.log(response);
