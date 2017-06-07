@@ -57,7 +57,7 @@
 		</div>
 		<section class="col-xs-9">
 			<div class="col-xs-4" ng-repeat="movie in movies track by $index">
-				<img id="poster posters" ng-click="selectedMovie(movie)" ng-src="{{img + movie.poster_path}}"  data-toggle="modal" data-target="#themodal">
+				<img id="poster" ng-click="selectedMovie(movie)" ng-src="{{img + movie.poster_path}}"  data-toggle="modal" data-target="#themodal">
 				<!--MIRAR superCRM-->
 			</div>
 		</section>
