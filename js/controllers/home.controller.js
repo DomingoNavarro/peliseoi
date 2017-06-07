@@ -60,7 +60,7 @@
                 .get(baseUrl + "discover/movie?api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES&sort_by=popularity.desc&page=1&with_genres=" + genreId)
                 .then(function (response){
                      $scope.movies = response.data.results;
-                console.log(response.data.results);
+                console.log(response.data);
 					  })
         }
 		call();
