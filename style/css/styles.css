@@ -88,13 +88,13 @@ button{
 
 .posters img {
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .posters img:hover {
     -webkit-filter: brightness(40%);
     filter: brightness(40%);
+}
+.modal-body{
+	border-bottom: 1px solid #e9ecee;
 }
