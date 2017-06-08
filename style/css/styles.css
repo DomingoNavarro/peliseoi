@@ -95,6 +95,6 @@ button{
     -webkit-filter: brightness(40%);
     filter: brightness(40%);
 }
-.modal-header{
-	border-bottom: 1px solid #e9ecee;
+.modal-body{
+	border-top: 1px solid #e9ecee;
 }
