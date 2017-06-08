@@ -1,10 +1,10 @@
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-xs-2">
                 <img class="logoPelisEoi" src="style/images/Logo.png">
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-6">
                 <ul>
                     <li>Categoría</li>
                     <li>Mejor Valoradas</li>
@@ -12,7 +12,7 @@
                     <li>Proximamente</li>
                 </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
                 <form>
                     <input type="text" class="form-control buscardor" ng-model="searchMovie" placeholder="Encuentra tu película favorita">
                 </form>
@@ -22,26 +22,26 @@
 </nav>
 <div class="container">
     <div class="row subNav">
-        <div class="col-sm-3">
-            <div class="col-sm-2">
+        <div class="col-xs-3">
+            <div class="col-xs-2">
                 img
             </div>
-            <div class="col-sm-2 col-sm-offset-1">
+            <div class="col-xs-2 col-xs-offset-1">
                 Filtrar
             </div>
-            <div class="col-sm-3 col-sm-offset-3">
+            <div class="col-xs-3 col-xs-offset-3">
                 Borrar
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-3">
             <span class="cantidad">107,875</span> <span class="movF">películas encontradas</span>
         </div>
-        <div class="col-sm-1 col-sm-offset-5">
+        <div class="col-xs-1 col-xs-offset-5">
             ordenar+
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-xs-3">
             Barras animadas que mueven
         </div>
 
@@ -49,14 +49,14 @@
     </div>
     <div class="row">
 
-        <div class="col-sm-3">
+        <div class="col-xs-3">
 
 
-            <button class="btn btn-default col-sm-6" ng-click="getGenre(genre.id)" ng-repeat="genre in genres track by $index">{{genre.name}}</button>
+            <button class="btn btn-default col-xs-6" ng-click="getGenre(genre.id)" ng-repeat="genre in genres track by $index">{{genre.name}}</button>
 
         </div>
-        <section class="col-sm-9 posters">
-            <div class="col-sm-4" ng-repeat="movie in movies track by $index">
+        <section class="col-xs-9 posters">
+            <div class="col-xs-4" ng-repeat="movie in movies track by $index">
                 <img id="poster" ng-click="selectedMovie(movie)" ng-src="{{img + movie.poster_path}}" data-toggle="modal" data-target="#themodal">
                 <!--MIRAR superCRM-->
             </div>
@@ -72,23 +72,23 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="row">
-                    <div class="col-sm-5 colOfHeader">
+                    <div class="col-xs-5 colOfHeader">
                         <h4>{{newMovie.title}}{{newMovie.release_date}}</h4>
                     </div>
-                    <div class="col-sm-1 col-sm-offset-6">
+                    <div class="col-xs-1 col-xs-offset-6">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                 </div>
 
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-xs-5">
                             <img class="imgModal" ng-src="{{img + newMovie.poster_path}}" />
                         </div>
-                        <div class="col-sm-1">
+                        <div class="col-xs-1">
                             Sinopsis
                         </div>
-                        <div class="col-sm-offset-5 col-sm-1">
+                        <div class="col-xs-offset-5 col-xs-1">
                             Sinopsis
                         </div>
                     </div>
