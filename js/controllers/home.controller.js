@@ -25,7 +25,7 @@
 
 		}
 		var baseUrl = "https://api.themoviedb.org/3/";
-
+/*RECOGEMOS TODAS LAS PELICULAS*/
 		function call() {
 			$http.get(baseUrl + "discover/movie?&primary_release_year=2017&api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES")
 
