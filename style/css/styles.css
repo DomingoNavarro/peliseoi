@@ -104,42 +104,19 @@ button {
 	-webkit-filter: brightness(40%);
 	filter: brightness(40%);
 }
+/*MODAL*/
 
-.modal-body {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 1180px;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
+
+.modal-dialog{
+	width: 1224px;
 }
 
-.heavenText {
-	height: 25px;
-	width: 707px;
-}
 
-.resumeMovie {
-	width: 707px;
-}
-.subHeaven{
 
-	width: 707px;
-}
 .fa , .fa-user{
 
 }
-.input-group-addon{
-	height: 38px;
-	border-right: 0px;
-	background-color: #5c6269;
-	color:#1b2126;
-}
-.form-control{
-	height: 38px;
-	border-left: 0px;
-}
+
 a:link {
 	text-decoration: none;
 	color: #b1b5b8;
@@ -152,10 +129,9 @@ span .input-group-addon{
 	text-decoration: none;
 	color:#f3644f;
 }
-.input-group{
-	height: 37px;
-}
+
 .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
 	color:#1b2126;
 	font-size: 16px;
+	border-radius: 5px;
 }

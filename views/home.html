@@ -14,13 +14,14 @@
 				</ul>
 			</div>
 			<div class="col-xs-4">
+
 				<form>
 
 				 <div class="input-group">
+					<!--NO consigo alinear la lupa
+                    <!--<span ng-click="buscaPeli(peli)" class=""><i class="fa fa-search"></i></span>-->
 
-                    <span ng-click="buscaPeli(peli)" class="input-group-addon myform noborder pointer"><i class="fa fa-search" aria-hidden="true"></i></span>
-
-                    <input  placeholder="Buscar..." ng-model="peli" type="text" class="form-control myform noborder" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+                    <input  placeholder="Buscar..." ng-model="peli" type="text" class="form-control myform noborder">
                 </div>
 
 
@@ -34,7 +35,7 @@
 	<div class="row subNav">
 		<div class="col-xs-3">
 			<div class="refine col-xs-2">
-				<img src="/style/images/Refine_Icon.png">
+				<img src="style/images/Refine_Icon.png">
 			</div>
 			<div class=" filtrar col-xs-2 col-xs-offset-1">
 				Filtrar
@@ -44,10 +45,10 @@
 			</div>
 		</div>
 		<div class="col-xs-3">
-			<span class="cantidad">107,875</span> <span class="movF">películas encontradas  </span>
+			<!--<span class="cantidad"></span> <span class="movF">películas encontradas  </span>-->
 		</div>
 		<div class="col-xs-1 col-xs-offset-5">
-			ordenar+
+
 		</div>
 	</div>
 	<div class="row">
@@ -91,21 +92,22 @@
 				</div>
 			</div>
 			<div class="modal-body">
-				<div class="imgNewMovieModal">
-					<img ng-src="{{img + newMovie.poster_path}}" onerror="this.src='https://vignette3.wikia.nocookie.net/monsterhunterespanol/images/a/aa/Imagen-no-disponible-282x300.png/revision/latest?cb=20140827124248&path-prefix=es'">
-				</div>
-				<div class="heavenText">
+
+					<img  class="theMovie" ng-src="{{img + newMovie.poster_path}}" onerror="{{imgError}}">
+
+				<!--
 					<span class="sinop">Sinopsis</span>
 					<span class="duration">2h16m</span>
-				</div>
-				<div class="subHeaven">
+
+
 					<div class="secondRow">genero 1</div>
 					<div class="secondRow">genero 1</div>
 					<div class="secondRow">STAR</div>
 					<div class="secondRow">TOMATES</div>
 					<div class="secondRow">POPCORN</div>
-				</div>
+
 				<div class="resumeMovie">{{newMovie.overview}}</div>
+				-->
 			</div>
 			<div class="modal-footer">
 			</div>

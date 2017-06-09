@@ -22,15 +22,17 @@
 		$scope.popNow = popNow;
 		$scope.incoming = incoming;
 		$scope.restartMovies = restartMovies;
+		$scope.cantidad = $scope.movies.length;
+		$scope.imgError = "this.src='https://vignette3.wikia.nocookie.net/monsterhunterespanol/images/a/aa/Imagen-no-disponible-282x300.png/revision/latest?cb=20140827124248&path-prefix=es'";
 
 		activate();
 
 		////////////////
-
 		function activate() {
 
 		}
 		var baseUrl = "https://api.themoviedb.org/3/";
+
 		/*RECOGEMOS TODAS LAS PELICULAS*/
 		//https://api.themoviedb.org/3/discover/movie?api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES&sort_by=revenue.asc&include_adult=true&include_video=false&page=1
 		function call() {
@@ -51,6 +53,7 @@
 				.get(baseUrl + "discover/movie?api_key=edf0f15a547c21b304bcfd7d8fefc700&language=es-ES&sort_by=revenue.asc&include_adult=true&include_video=false&page=1")
 				.then(function (response) {
 					$scope.movies = response.data.results;
+
 				})
 		}
 
